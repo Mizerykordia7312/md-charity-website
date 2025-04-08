@@ -3,14 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './Navigation.module.scss';
 import logo from '../assets/img/logo.png';
 import { useState } from 'react';
-
-const navLinks = [
-	{ path: '/', label: 'Strona Główna' },
-	{ path: 'autism-info', label: 'Informacje o autyźmie' },
-	{ path: 'achievements', label: 'Osiągnięcia' },
-	{ path: 'news', label: 'Aktualności' },
-	{ path: 'help-us', label: 'Wesprzyj nas!' },
-];
+import { navLinks } from '../data/nav-data';
 
 const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +29,7 @@ const Navigation = () => {
 				<img
 					src={logo}
 					alt='Miś w awionetcę pokazuje baner z nazwą fundacjii '
-					onClick={isOpen && toggleNav}
+					onClick={isOpen ? toggleNav : undefined}
 				/>
 			</Link>
 			<ul className={`${styles.menu} ${clases}`}>

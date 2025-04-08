@@ -1,0 +1,66 @@
+@import '../style/colors.scss';
+
+.helpedCart {
+	position: relative;
+	width: 450px;
+	height: 300px;
+	cursor: pointer;
+	background-color: red;
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: transform 0.3s ease, border-color 0.3s ease;
+	border: 3px solid darken($main-yellow, 20%);
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+		object-position: scale-down;
+	}
+
+	.description {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 90%;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.5rem;
+		text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	&:hover {
+		transform: scale(0.97);
+		border-color: lighten($main-yellow, 10%);
+		will-change: transform;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.helpedCart {
+		width: 360px;
+		height: 240px;
+
+		.description {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (max-width: 479px) {
+	.helpedCart {
+		width: 405px;
+		height: 270px;
+
+		.description {
+			font-size: 0.9rem;
+		}
+	}
+}
