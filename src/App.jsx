@@ -3,6 +3,7 @@ import AutismInfoPage from './pages/AutismInfoPage.jsx';
 import AchievementsPage from './pages/AchievementsPage.jsx';
 import NewsPage from './pages/NewsPage.jsx';
 import HelpUsPage from './pages/HelpUsPage.jsx';
+import TestPage from './pages/TestPage.jsx';
 import Root from './pages/Root.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -22,6 +23,12 @@ const router = createBrowserRouter([
 			{
 				path: 'achievements',
 				element: <AchievementsPage />,
+				children: [
+					{
+						path: 'zs16',
+						element: <TestPage />,
+					},
+				],
 			},
 			{
 				path: 'news',

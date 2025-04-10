@@ -1,0 +1,173 @@
+@import '../../style/colors.scss';
+
+.slider-container {
+	width: 100%;
+	max-width: 1150px;
+	height: auto;
+	aspect-ratio: 1150 / 600;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+	border: 5px solid $main-yellow;
+	border-radius: 8px;
+
+	.slide {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.second-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.from-right {
+		transform: translateX(100%);
+	}
+
+	.from-left {
+		transform: translateX(-100%);
+	}
+
+	.arrow {
+		z-index: 2;
+		background: rgba(255, 255, 255, 0.6);
+		border: none;
+		padding: 10px;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: background 0.2s ease;
+		font-size: 55px;
+
+		&.left {
+			left: 10px;
+		}
+
+		&.right {
+			right: 10px;
+		}
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.9);
+		}
+	}
+
+	.desription-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		position: absolute;
+		bottom: 3%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		height: 50px;
+		width: 95%;
+
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 8px;
+
+		.description {
+			color: $main-light;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 1rem;
+		}
+	}
+
+	.hide-slide-to-right {
+		animation: 1s hideToRight forwards;
+	}
+
+	.previous-slide-animation {
+		animation: 1s showPreviousSlide forwards;
+	}
+
+	.next-slide-animation {
+		animation: 1s showNextSlide forwards;
+	}
+
+	.hide-slide-animation {
+		animation: 1s hideSlide forwards;
+	}
+}
+
+.mobile-cards {
+	display: none;
+}
+
+@keyframes showPreviousSlide {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes hideToRight {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes showNextSlide {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes hideSlide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translate(-100%);
+	}
+}
+
+@media (max-width: 1024px) {
+	.slider-container {
+		height: 500px;
+
+		.desription-container {
+			.description {
+				font-size: 0.8rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.slider-container {
+		height: 400px;
+		margin: 30px auto;
+		.arrow {
+			font-size: 35px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.slider-container {
+		display: none;
+	}
+
+	.mobile-cards {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 16px 0px;
+	}
+}
