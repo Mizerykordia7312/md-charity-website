@@ -1,6 +1,6 @@
 @import '../../style/colors.scss';
 
-.slider-container {
+.container {
 	width: 100%;
 	max-width: 1150px;
 	height: auto;
@@ -17,18 +17,10 @@
 		object-fit: cover;
 	}
 
-	.second-image {
+	.secondImage {
 		position: absolute;
 		top: 0;
 		left: 0;
-	}
-
-	.from-right {
-		transform: translateX(100%);
-	}
-
-	.from-left {
-		transform: translateX(-100%);
 	}
 
 	.arrow {
@@ -56,7 +48,7 @@
 		}
 	}
 
-	.desription-container {
+	.desriptionContainer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -80,24 +72,24 @@
 		}
 	}
 
-	.hide-slide-to-right {
+	.hideSlideToRight {
 		animation: 1s hideToRight forwards;
 	}
 
-	.previous-slide-animation {
+	.previousSlideAnimation {
 		animation: 1s showPreviousSlide forwards;
 	}
 
-	.next-slide-animation {
+	.nextSlideAnimation {
 		animation: 1s showNextSlide forwards;
 	}
 
-	.hide-slide-animation {
+	.hideSlideAnimation {
 		animation: 1s hideSlide forwards;
 	}
 }
 
-.mobile-cards {
+.mobileCards {
 	display: none;
 }
 
@@ -138,10 +130,8 @@
 }
 
 @media (max-width: 1024px) {
-	.slider-container {
-		height: 500px;
-
-		.desription-container {
+	.container {
+		.desriptionContainer {
 			.description {
 				font-size: 0.8rem;
 			}
@@ -150,9 +140,7 @@
 }
 
 @media (max-width: 768px) {
-	.slider-container {
-		height: 400px;
-		margin: 30px auto;
+	.container {
 		.arrow {
 			font-size: 35px;
 		}
@@ -160,11 +148,11 @@
 }
 
 @media (max-width: 480px) {
-	.slider-container {
+	.container {
 		display: none;
 	}
 
-	.mobile-cards {
+	.mobileCards {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;

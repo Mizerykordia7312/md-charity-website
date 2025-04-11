@@ -1,28 +1,38 @@
-import sliderData from '../../data/slider-data';
 import MobileCart from './MobileCart';
 import classes from '../../components/Slider/Slider.module.scss';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-const Slider = () => {
+const Slider = ({ data }) => {
 	const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 	const [animationClass, setAnimationClass] = useState('');
 	const [hideSlideClass, setHideSlideClass] = useState('');
 	const [sliderStarted, setSliderStarted] = useState(false);
 	const [slidesAreRewinding, setSlidesAreRewinding] = useState(false);
+	const intervalRef = useRef(null);
+
+	const startSliderInterval = () => {
+		if (intervalRef.current) {
+			clearInterval(intervalRef.current);
+		}
+		intervalRef.current = setInterval(() => {
+			showNextSlide();
+		}, 5000);
+	};
 
 	const showNextSlide = () => {
 		setSliderStarted(true);
 		setAnimationClass('');
 		setHideSlideClass('');
 		setSlidesAreRewinding(false);
+		startSliderInterval();
 
 		setTimeout(() => {
 			setCurrentSlideIndex((prevIndex) =>
-				prevIndex !== sliderData.length - 1 ? prevIndex + 1 : 0
+				prevIndex !== data.length - 1 ? prevIndex + 1 : 0
 			);
-			setHideSlideClass(classes['hide-slide-animation']);
-			setAnimationClass(classes['next-slide-animation']);
+			setHideSlideClass(classes.hideSlideAnimation);
+			setAnimationClass(classes.nextSlideAnimation);
 		}, 10);
 	};
 
@@ -31,56 +41,60 @@ const Slider = () => {
 		setAnimationClass('');
 		setHideSlideClass('');
 		setSlidesAreRewinding(true);
+		startSliderInterval();
 
 		setTimeout(() => {
 			setCurrentSlideIndex((prevIndex) =>
-				prevIndex !== 0 ? prevIndex - 1 : sliderData.length - 1
+				prevIndex !== 0 ? prevIndex - 1 : data.length - 1
 			);
-			setHideSlideClass(classes['hide-slide-to-right']);
-			setAnimationClass(classes['previous-slide-animation']);
+			setHideSlideClass(classes.hideSlideToRight);
+			setAnimationClass(classes.previousSlideAnimation);
 		}, 10);
 	};
 
 	useEffect(() => {
-		const interval = setInterval(() => {
-			showNextSlide();
-		}, 5000);
-
-		return () => {
-			clearInterval(interval);
-		};
+		startSliderInterval();
+		return () => clearInterval(intervalRef.current);
 	}, []);
+
+	const getImageSrc = () => {
+		if (!slidesAreRewinding) {
+			if (!sliderStarted) {
+				return data[currentSlideIndex].image;
+			} else if (currentSlideIndex === 0) {
+				return data[data.length - 1].image;
+			} else {
+				return data[currentSlideIndex - 1].image;
+			}
+		} else {
+			if (currentSlideIndex !== data.length - 1) {
+				return data[currentSlideIndex + 1].image;
+			} else {
+				return data[0].image;
+			}
+		}
+	};
 
 	return (
 		<>
-			<div className={classes['slider-container']}>
+			<div className={classes.container}>
 				<img
-					src={
-						!slidesAreRewinding
-							? !sliderStarted
-								? sliderData[currentSlideIndex].image
-								: currentSlideIndex === 0
-								? sliderData[sliderData.length - 1].image
-								: sliderData[currentSlideIndex - 1].image
-							: currentSlideIndex !== sliderData.length - 1
-							? sliderData[currentSlideIndex + 1].image
-							: sliderData[0].image
-					}
-					alt='ababa'
+					src={getImageSrc()}
+					alt={data[currentSlideIndex].altText}
 					className={`${classes.slide} ${hideSlideClass}`}
 				/>
 				<img
 					src={
-						currentSlideIndex === sliderData.length
-							? sliderData[0].image
-							: sliderData[currentSlideIndex].image
+						currentSlideIndex === data.length
+							? data[0].image
+							: data[currentSlideIndex].image
 					}
 					alt='blrblr'
-					className={`${classes.slide} ${classes['second-image']} ${animationClass}`}
+					className={`${classes.slide} ${classes.secondImage} ${animationClass}`}
 				/>
-				<div className={classes['desription-container']}>
+				<div className={classes.desriptionContainer}>
 					<p className={classes.description}>
-						{sliderData[currentSlideIndex].description}
+						{data[currentSlideIndex].description}
 					</p>
 				</div>
 				<FaChevronLeft
@@ -92,12 +106,12 @@ const Slider = () => {
 					onClick={showNextSlide}
 				/>
 			</div>
-			<div class={classes['mobile-cards']}>
-				{sliderData.map((slide, index) => {
+			<div class={classes.mobileCards}>
+				{data.map((slide, index) => {
 					return (
 						<MobileCart
 							img={slide.image}
-							alt={slide.description}
+							alt={slide.altText}
 							key={index}
 							description={slide.description}
 						/>
