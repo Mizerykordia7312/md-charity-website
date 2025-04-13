@@ -32,6 +32,20 @@
 
 @media (max-width: 480px) {
 	.school {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 15px;
+
+		.title {
+			font-size: 25px;
+			text-transform: uppercase;
+		}
+
+		.text {
+			margin-left: 0;
+		}
 		.imgContainer {
 			.logo {
 				width: 150px;

@@ -1,11 +1,11 @@
-import slide from '../assets/img/zespół-szkół-nr-16/zs16_slide1.jpg';
-import slide2 from '../assets/img/zespół-szkół-nr-16/zs16_slide2.jpg';
-import slide3 from '../assets/img/zespół-szkół-nr-16/zs16_slide3.jpg';
-import slide4 from '../assets/img/zespół-szkół-nr-16/zs16_slide4.jpg';
-import slide5 from '../assets/img/zespół-szkół-nr-16/zs16_slide5.jpg';
-import slide6 from '../assets/img/zespół-szkół-nr-16/zs16_slide6.jpg';
-import slide7 from '../assets/img/zespół-szkół-nr-16/zs16_slide7.jpg';
-import slide8 from '../assets/img/zespół-szkół-nr-16/zs16_slide8.jpg';
+import slide from '../../../assets/img/zespół-szkół-nr-16/zs16_slide1.jpg';
+import slide2 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide2.jpg';
+import slide3 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide3.jpg';
+import slide4 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide4.jpg';
+import slide5 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide5.jpg';
+import slide6 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide6.jpg';
+import slide7 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide7.jpg';
+import slide8 from '../../../assets/img/zespół-szkół-nr-16/zs16_slide8.jpg';
 
 const sliderData = [
 	{

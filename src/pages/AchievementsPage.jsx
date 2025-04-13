@@ -1,4 +1,4 @@
-import HelpedCart from '../components/HelpedCart';
+import HelpedCart from '../components/HelpedCart/HelpedCart';
 import styles from './AchievementsPage.module.scss';
 import { helpedCartData } from '../data/helped-data';
 import { Outlet, useLocation } from 'react-router-dom';
@@ -22,6 +22,7 @@ const AchievmentsPage = () => {
 									description={cart.description}
 									alt={cart.alt}
 									key={index}
+									href={cart.href}
 								/>
 							);
 						})}
