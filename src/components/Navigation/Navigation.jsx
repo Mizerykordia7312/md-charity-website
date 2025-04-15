@@ -1,9 +1,9 @@
 import { NavLink, Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './Navigation.module.scss';
-import logo from '../assets/img/logo.png';
+import logo from '../../assets/img/logo.png';
 import { useState } from 'react';
-import { navLinks } from '../data/nav-data';
+import { navLinks } from '../../data/nav-data';
 
 const Navigation = () => {
 	const [isOpen, setIsOpen] = useState(false);

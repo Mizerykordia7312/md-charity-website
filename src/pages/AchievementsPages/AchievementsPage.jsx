@@ -1,6 +1,6 @@
-import HelpedCart from '../components/HelpedCart/HelpedCart';
+import HelpedCard from '../../components/HelpedCard/HelpedCard';
 import styles from './AchievementsPage.module.scss';
-import { helpedCartData } from '../data/helped-data';
+import { helpedCartData } from '../../data/helped-data';
 import { Outlet, useLocation } from 'react-router-dom';
 
 const AchievmentsPage = () => {
@@ -17,7 +17,7 @@ const AchievmentsPage = () => {
 					<div className={styles.wrapper}>
 						{helpedCartData.map((cart, index) => {
 							return (
-								<HelpedCart
+								<HelpedCard
 									img={cart.img}
 									description={cart.description}
 									alt={cart.alt}

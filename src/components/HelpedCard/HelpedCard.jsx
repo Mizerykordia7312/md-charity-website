@@ -1,12 +1,8 @@
 import { useNavigate } from 'react-router-dom';
-import styles from './HelpedCart.module.scss';
+import styles from './HelpedCard.module.scss';
 
 const HelpedCart = ({ imageDescription, description, img, href }) => {
 	const navigate = useNavigate();
-
-	const handleClick = () => {
-		navigate('/achievements/zs16');
-	};
 
 	const changeSite = (address) => {
 		navigate(`/achievements/${address}`);

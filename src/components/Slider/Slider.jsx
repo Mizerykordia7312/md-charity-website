@@ -1,4 +1,4 @@
-import MobileCart from './MobileCart';
+import MobileCard from './MobileCard';
 import classes from '../../components/Slider/Slider.module.scss';
 import { useRef, useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
@@ -109,7 +109,7 @@ const Slider = ({ data }) => {
 			<div class={classes.mobileCards}>
 				{data.map((slide, index) => {
 					return (
-						<MobileCart
+						<MobileCard
 							img={slide.image}
 							alt={slide.altText}
 							key={index}

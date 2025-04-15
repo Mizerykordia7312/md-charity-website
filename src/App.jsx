@@ -1,10 +1,10 @@
 import MainPage from './pages/MainPage.jsx';
 import AutismInfoPage from './pages/AutismInfoPage.jsx';
-import AchievementsPage from './pages/AchievementsPage.jsx';
+import AchievementsPage from './pages/AchievementsPages/AchievementsPage.jsx';
 import NewsPage from './pages/NewsPage.jsx';
 import HelpUsPage from './pages/HelpUsPage.jsx';
-import HelpedPage from './pages/HelpedPage.jsx';
-import BeneficiariesPage from './pages/BeneficiariesPage.jsx';
+import HelpedPage from './pages/AchievementsPages/HelpedPage.jsx';
+import BeneficiariesPage from './pages/AchievementsPages/BeneficiariesPage.jsx';
 import Root from './pages/Root.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 

@@ -1,4 +1,4 @@
-import classes from '../Slider/MobileCart.module.scss';
+import classes from '../Slider/MobileCard.module.scss';
 
 const MobileCart = ({ img, description }) => {
 	return (
