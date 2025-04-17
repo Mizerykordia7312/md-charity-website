@@ -1,3 +1,5 @@
+@import '../../style/colors.scss';
+
 .card {
 	width: 300px;
 	background-color: #f7f9fa;
@@ -8,7 +10,6 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	font-family: 'Arial', sans-serif;
 	transition: scale 0.3s;
 
 	&:hover {
@@ -46,7 +47,7 @@
 	.supportButton {
 		margin: 1rem 0;
 		padding: 0.6rem 1.2rem;
-		background-color: #fd6a33;
+		background-color: $main-orange;
 		color: white;
 		border: none;
 		border-radius: 20px;
@@ -54,7 +55,7 @@
 		font-size: 0.9rem;
 		transition: background-color 0.3s;
 		align-self: flex-end;
-        margin-right: 20px;
+		margin-right: 20px;
 
 		&:hover {
 			background-color: #e25a2c;

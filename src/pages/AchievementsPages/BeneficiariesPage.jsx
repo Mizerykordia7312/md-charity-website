@@ -1,11 +1,20 @@
 import ChildCart from '../../components/ChildCard/ChildCard';
 import classes from './BeneficiariesPage.module.scss';
 import childrenData from '../../data/children-data';
+import { useLocation, Outlet } from 'react-router-dom';
 
-const BeneficiariesPage = (params) => {
+const BeneficiariesPage = () => {
+	const location = useLocation();
+
+	const isAchievementsPage = location.pathname === '/achievements/podopieczni';
+
+	if (!isAchievementsPage) {
+		return <Outlet />;
+	}
+
 	return (
 		<>
-			<h1>Podopieczni</h1>
+			<h1>Nasi podopieczni</h1>
 
 			<div className={classes.wrapper}>
 				{childrenData.map((childData, index) => {
@@ -16,6 +25,7 @@ const BeneficiariesPage = (params) => {
 							title={childData.title}
 							description={childData.shortDescription}
 							alt={childData.alt}
+							href={childData.href}
 						/>
 					);
 				})}

@@ -1,0 +1,14 @@
+@import '../../style/colors.scss';
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	background-color: #f8f9fa;
+}
+
+@media (max-width: 480px) {
+	.wrapper {
+		padding: 1rem;
+	}
+}

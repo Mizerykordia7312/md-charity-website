@@ -1,0 +1,105 @@
+@import '../../style/colors.scss';
+
+.container {
+	max-width: 800px;
+	background-color: white;
+	padding: 2rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	position: relative;
+	animation: showContainer 1s forwards;
+
+	.arrow {
+		color: $main-orange;
+		position: absolute;
+		top: 0;
+		left: 10px;
+		animation: moveArrow 1s forwards;
+		animation-delay: 1s;
+		cursor: pointer;
+		opacity: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 1rem;
+		margin-bottom: 1.5rem;
+		object-fit: cover;
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: #2c3e50;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.7;
+		color: #333;
+		text-align: justify;
+		margin-bottom: 2rem;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		color: $main-red;
+		font-weight: bold;
+		margin-top: auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		.arrow {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 1.5rem;
+
+		h1 {
+			font-size: 1.6rem;
+		}
+
+		p {
+			font-size: 0.95rem;
+		}
+
+		h3 {
+			font-size: 1.1rem;
+		}
+	}
+}
+
+@keyframes showContainer {
+	from {
+		transform: translateX(-20%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes moveArrow {
+	0% {
+		opacity: 0;
+		left: 10px;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		left: -120px;
+	}
+}

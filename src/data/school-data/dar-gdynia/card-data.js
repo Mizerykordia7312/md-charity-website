@@ -1,4 +1,4 @@
-import logo from '../../../assets/img/sp-dar/images.png';
+import logo from '../../../assets/img/sp-dar/logo.png';
 
 const darCardData = {
 	logo: logo,
