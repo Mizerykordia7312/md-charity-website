@@ -1,25 +1,20 @@
 @import '../../../style/colors.scss';
 
 .aboutSection {
-	background-color: #fdf7f7;
-	padding: 3rem 1rem;
+	background-color: $main-light;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
 	.container {
-		background-color: $main-yellow;
-		display: inline-block;
+		background-color: $main-light-blue;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+		// box-shadow: 0 4px 12px rgba(0, 120, 180, 0.15);
+		// box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+		// box-shadow: 0 4px 10px rgba(173, 216, 230, 0.4);
 		border-radius: 0.5rem;
 		padding: 1.2rem;
-	}
-
-	.sectionTitle {
-		text-align: center;
-		font-size: 2.5rem;
-		margin-bottom: 2rem;
-		color: #2b2b2b;
 	}
 
 	.intro {
@@ -52,7 +47,8 @@
 
 	.highlight {
 		margin-top: 2rem;
-		background-color: #ffe8f0;
+		background-color: $main-light-blue;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 		padding: 1.5rem;
 		border-radius: 1rem;
 		font-weight: 500;

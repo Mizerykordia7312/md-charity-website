@@ -3,7 +3,7 @@ import classes from './AboutUsSection.module.scss';
 const AboutUsSection = () => {
 	return (
 		<section className={classes.aboutSection}>
-			<h2 className={classes.sectionTitle}>O naszej fundacji</h2>
+			<h2 className='section-title'>O naszej fundacji</h2>
 			<div className={classes.container}>
 				<p className={classes.intro}>
 					Zajmujemy się wyposażaniem szkół i przedszkoli dla dzieci z
