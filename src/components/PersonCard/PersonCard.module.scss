@@ -42,6 +42,14 @@
 			color: #333;
 			line-height: 1.4;
 		}
+
+		.role {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			color: #777;
+			margin-bottom: 1rem;
+		}
 	}
 
 	.supportButton {
@@ -61,4 +69,8 @@
 			background-color: #e25a2c;
 		}
 	}
+}
+
+.stopHover {
+	pointer-events: none;
 }

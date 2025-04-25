@@ -1,4 +1,4 @@
-import ChildCart from '../../components/ChildCard/ChildCard';
+import PersonCard from '../../components/PersonCard/PersonCard';
 import classes from './BeneficiariesPage.module.scss';
 import childrenData from '../../data/children-data';
 import { useLocation, Outlet } from 'react-router-dom';
@@ -19,7 +19,7 @@ const BeneficiariesPage = () => {
 			<div className={classes.wrapper}>
 				{childrenData.map((childData, index) => {
 					return (
-						<ChildCart
+						<PersonCard
 							key={index}
 							img={childData.img}
 							title={childData.title}
