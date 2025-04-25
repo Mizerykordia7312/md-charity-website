@@ -66,3 +66,5 @@ const years = [
 			'Ponadto wsparliśmy również Kubę, chłopca z autyzmem z Wrocławia, kupując mu kołderkę i kamizelkę obciążeniową.',
 	},
 ];
+
+export default years;
