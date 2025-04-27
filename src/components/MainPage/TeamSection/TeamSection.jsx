@@ -4,7 +4,7 @@ import PersonCard from '../../PersonCard/PersonCard.jsx';
 
 const TeamSection = () => {
 	return (
-		<section>
+		<section className={classes.container}>
 			<h1 className='section-title'>Nasz Zespół</h1>
 			<div className={classes.cards}>
 				{members.map((member, index) => {
