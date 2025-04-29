@@ -10,8 +10,8 @@ const MainPage = () => {
 		<>
 			<HeroSection />
 			<AboutUsSection />
-			<HistorySection />
 			<TeamSection />
+			<HistorySection />
 			<DocumentsSection />
 		</>
 	);

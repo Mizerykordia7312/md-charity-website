@@ -1,7 +1,7 @@
 @import '../../../style/colors.scss';
 
 .container {
-	background-color: $main-light-blue;
+	background-color: $main-light-yellow;
 }
 
 .cards {
@@ -10,4 +10,10 @@
 	align-items: center;
 	gap: 5rem;
 	flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+	.cards {
+		gap: 2rem;
+	}
 }

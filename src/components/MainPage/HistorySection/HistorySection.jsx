@@ -4,11 +4,10 @@ import {
 	VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { WorkflowIcon } from 'lucide-react';
 import years from '../../../data/timeline-data.js';
 import { useState } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 
 const HistorySection = () => {
 	const [visableElements, setVisableElements] = useState(2);
@@ -25,7 +24,7 @@ const HistorySection = () => {
 					{years.slice(0, visableElements).map((years, index) => (
 						<VerticalTimelineElement
 							className=' vertical-timeline-element--work '
-							contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+							contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
 							contentArrowStyle={{
 								borderRight: '7px solid  rgb(33, 150, 243)',
 							}}
@@ -64,7 +63,7 @@ const HistorySection = () => {
 					{visableElements < years.length && (
 						<VerticalTimelineElement
 							iconStyle={{
-								background: 'rgb(16, 204, 82)',
+								background: 'rgb(33, 150, 243)',
 								color: '#fff',
 								cursor: 'pointer',
 							}}
