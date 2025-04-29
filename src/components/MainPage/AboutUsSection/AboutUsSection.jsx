@@ -1,4 +1,6 @@
 import classes from './AboutUsSection.module.scss';
+import { AiFillHeart } from 'react-icons/ai';
+import { FaPaw } from 'react-icons/fa';
 
 const AboutUsSection = () => {
 	return (
@@ -50,6 +52,9 @@ const AboutUsSection = () => {
 					<strong>około 295 000 zł</strong> (stan na kwiecień 2025)
 				</p>
 			</div>
+
+			<AiFillHeart className={`${classes.icon} ${classes.left}`} />
+			<FaPaw className={`${classes.icon} ${classes.right}`} />
 		</section>
 	);
 };
