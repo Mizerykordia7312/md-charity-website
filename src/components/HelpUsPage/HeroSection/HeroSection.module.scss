@@ -1,0 +1,71 @@
+@import '../../../style/colors.scss';
+
+.donationHero {
+	position: relative;
+	background-image: url(../../../assets/img/help-us/donate.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 2rem;
+
+	.donationText {
+		max-width: 450px;
+		background: rgba(255, 255, 255, 0.85);
+		padding: 2rem;
+		border-radius: 1rem;
+		text-align: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+		h2 {
+			font-size: 1.8rem;
+			color: $main-red;
+			margin-bottom: 1rem;
+		}
+
+		.description {
+			font-size: 1.1rem;
+			color: #333;
+			margin-bottom: 1.5rem;
+		}
+
+		.donateBtn {
+			display: inline-block;
+			padding: 0.7rem 1.5rem;
+			background-color: #f39c12;
+			color: #fff;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: #e67e22;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.donationHero {
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.donationText {
+			h2 {
+				font-size: 1.4rem;
+			}
+
+			.donateBtn {
+				padding: 0.5rem 1.1rem;
+			}
+		}
+
+		.description {
+			display: none;
+		}
+	}
+}

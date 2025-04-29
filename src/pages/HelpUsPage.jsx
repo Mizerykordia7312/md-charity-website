@@ -1,5 +1,7 @@
+import HeroSection from '../components/HelpUsPage/HeroSection/HeroSection';
+
 const HelpUsPage = () => {
-	return <h1>Help Us</h1>;
+	return <HeroSection />;
 };
 
 export default HelpUsPage;
