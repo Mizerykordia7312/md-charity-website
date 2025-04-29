@@ -14,10 +14,10 @@ const Footer = () => {
 
 			<div className={classes.contact}>
 				<h3>Kontakt</h3>
-				<p>📞 606 353 893</p>
+				<p>📞 506 353 893</p>
 				<p>📧 maskotkidzieciom@gmail.com</p>
-				<Link to='https://www.facebook.com/maskotkidzieciom/'>
-					www.facebook.com/maskotkidzieciom/
+				<Link to='https://www.facebook.com/maskotkidzieciom/' target='blank'>
+					📘 www.facebook.com/maskotkidzieciom
 				</Link>
 			</div>
 

@@ -15,7 +15,10 @@ const DocumentsSection = () => {
 					<img src={statut} alt='' />
 					<h3>Statut fundacji</h3>
 					<a href={statutPdf} download>
-						<button>Pobierz</button>
+						<button>
+							<FiDownload />
+							Pobierz
+						</button>
 					</a>
 				</div>
 
@@ -23,7 +26,9 @@ const DocumentsSection = () => {
 					<img src={odpis} alt='' />
 					<h3>Odpis z KRS</h3>
 					<a href={odpisPdf} download>
-						<button>Pobierz</button>
+						<button>
+							<FiDownload /> Pobierz
+						</button>
 					</a>
 				</div>
 

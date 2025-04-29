@@ -52,6 +52,10 @@ section {
 				border-radius: 6px;
 				cursor: pointer;
 				transition: background-color 0.3s ease;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 0.2rem;
 
 				&:hover {
 					background-color: darken($main-yellow, 10%);
@@ -73,9 +77,11 @@ section {
 			h3 {
 				font-size: 1rem;
 			}
-
-			button {
+			a {
 				width: 100%;
+				button {
+					width: 100%;
+				}
 			}
 		}
 	}
