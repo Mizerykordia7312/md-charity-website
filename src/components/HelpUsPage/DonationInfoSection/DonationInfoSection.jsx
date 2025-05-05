@@ -6,7 +6,7 @@ const DonationInfoSection = () => {
 		<section className={classes.section}>
 			<div className={classes.container}>
 				<div className={classes.textBox}>
-					<h3>Jak możesz nam pomóc?</h3>
+					<h3>Jak możesz nam pomóc? </h3>
 					<hr />
 					<p>
 						Twoje wsparcie naprawdę zmienia świat – szczególnie świat dzieci z

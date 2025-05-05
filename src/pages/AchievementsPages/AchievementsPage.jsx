@@ -23,6 +23,7 @@ const AchievmentsPage = () => {
 									alt={cart.alt}
 									key={index}
 									href={cart.href}
+									hasButton={false}
 								/>
 							);
 						})}

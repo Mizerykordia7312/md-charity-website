@@ -1,0 +1,14 @@
+@import '../../../style/colors.scss';
+
+.section {
+	background-color: $main-light;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 5rem;
+	flex-wrap: wrap;
+}
