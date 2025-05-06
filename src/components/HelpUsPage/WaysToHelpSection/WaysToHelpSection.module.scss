@@ -9,6 +9,11 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	gap: 5rem;
+	row-gap: 2rem;
+	column-gap: 5rem;
 	flex-wrap: wrap;
+}
+
+.secondRow {
+	margin-top: 5rem;
 }
