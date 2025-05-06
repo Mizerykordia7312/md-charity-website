@@ -35,7 +35,7 @@ const WaysToHelpSection = () => {
 				/>
 				<WayToHelpCard
 					title='Wolontariat'
-					description='Jeśli jesteś zainteresowany zostać naszym wolontariuszem, napisz do nas lub zadzwoń! Możesz pomóc przy zbiórkach publicznych albo przygotować coś wyjątkowego dla dzieci.'
+					description='Jeśli chciałbyś zostać naszym wolontariuszem, napisz do nas lub zadzwoń! Możesz pomóc przy zbiórkach publicznych albo przygotować coś wyjątkowego dla dzieci.'
 					contact='📧 maskotkidzieciom@gmail.com'
 					secondContact='📞 506 353 893'
 				/>
