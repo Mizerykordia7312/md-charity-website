@@ -40,7 +40,7 @@ const WaysToHelpSection = () => {
 					secondContact='📞 506 353 893'
 				/>
 				<WayToHelpCard
-					title='Wysłanie maskotek'
+					title='Przelew bezpośredni'
 					description='Jeśli chcesz nas wesprzeć finansowo, możesz przelać dowolną kwotę bezpośrednio na numer rachunku podany poniżej. Każda wpłata pomaga nam działać na rzecz dzieci!'
 					contact='Numer rachunku'
 					secondContact='🏦65 1160 2202 0000 0003 0052 2609'

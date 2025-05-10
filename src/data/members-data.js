@@ -1,5 +1,5 @@
-import mateusz from '../assets/img/main-page/zespół/mateusz4.jpg';
-import angelika from '../assets/img/main-page/zespół//angelika.jpg';
+import mateusz from '../assets/img/main-page/zespół/mateusz.jpg';
+import angelika from '../assets/img/main-page/zespół/angelika.jpg';
 import marcin from '../assets/img/main-page/zespół/marcin.jpg';
 
 export const members = [
