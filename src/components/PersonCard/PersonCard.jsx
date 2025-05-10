@@ -5,7 +5,7 @@ const PersonCard = ({ img, title, description, alt, href, isMember, role }) => {
 	const navigate = useNavigate();
 
 	const changeSite = (address) => {
-		navigate(`/achievements/podopieczni/${address}`);
+		navigate(`/pomoglismy/podopieczni/${address}`);
 	};
 
 	return (

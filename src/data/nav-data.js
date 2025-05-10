@@ -1,7 +1,7 @@
 export const navLinks = [
 	{ path: '/', label: 'Strona Główna' },
-	{ path: 'autism-info', label: 'Informacje o autyzmie' },
-	{ path: 'achievements', label: 'Osiągnięcia' },
-	{ path: 'news', label: 'Aktualności' },
-	{ path: 'help-us', label: 'Wesprzyj nas!' },
+	{ path: 'autyzm-info', label: 'Informacje o autyzmie' },
+	{ path: 'pomoglismy', label: 'Pomogliśmy' },
+	{ path: 'wesprzyj-nas', label: 'Wesprzyj nas!' },
+	{ path: 'dla-potrzebujacych', label: 'Dla potrzebujących' },
 ];

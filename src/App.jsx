@@ -1,7 +1,7 @@
 import MainPage from './pages/MainPage.jsx';
 import AutismInfoPage from './pages/AutismInfoPage.jsx';
 import AchievementsPage from './pages/AchievementsPages/AchievementsPage.jsx';
-import NewsPage from './pages/NewsPage.jsx';
+import GetHelpPage from './pages/GetHelpPage.jsx';
 import HelpUsPage from './pages/HelpUsPage.jsx';
 import HelpedPage from './pages/AchievementsPages/HelpedPage.jsx';
 import BeneficiariesPage from './pages/AchievementsPages/BeneficiariesPage.jsx';
@@ -19,11 +19,11 @@ const router = createBrowserRouter([
 				element: <MainPage />,
 			},
 			{
-				path: 'autism-info',
+				path: 'autyzm-info',
 				element: <AutismInfoPage />,
 			},
 			{
-				path: 'achievements',
+				path: 'pomoglismy',
 				element: <AchievementsPage />,
 				children: [
 					{
@@ -43,12 +43,12 @@ const router = createBrowserRouter([
 				],
 			},
 			{
-				path: 'news',
-				element: <NewsPage />,
+				path: 'wesprzyj-nas',
+				element: <HelpUsPage />,
 			},
 			{
-				path: 'help-us',
-				element: <HelpUsPage />,
+				path: 'dla-potrzebujacych',
+				element: <GetHelpPage />,
 			},
 		],
 	},

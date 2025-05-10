@@ -6,7 +6,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 const AchievmentsPage = () => {
 	const location = useLocation();
 
-	const isExactAchievementsPath = location.pathname === '/achievements';
+	const isExactAchievementsPath =
+		location.pathname === '/pomoglismy';
 
 	return (
 		<>

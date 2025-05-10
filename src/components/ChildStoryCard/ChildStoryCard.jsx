@@ -6,7 +6,7 @@ const ChildStoryCard = ({ photo, title, description, price, alt }) => {
 	const navigate = useNavigate();
 
 	const backToBenificiaries = () => {
-		navigate('/achievements/podopieczni');
+		navigate('/pomoglismy/podopieczni');
 	};
 
 	return (

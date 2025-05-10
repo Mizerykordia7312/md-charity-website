@@ -6,7 +6,7 @@ import { useLocation, Outlet } from 'react-router-dom';
 const BeneficiariesPage = () => {
 	const location = useLocation();
 
-	const isAchievementsPage = location.pathname === '/achievements/podopieczni';
+	const isAchievementsPage = location.pathname === '/pomoglismy/podopieczni';
 
 	if (!isAchievementsPage) {
 		return <Outlet />;

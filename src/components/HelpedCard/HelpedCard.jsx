@@ -12,7 +12,7 @@ const HelpedCart = ({
 	const navigate = useNavigate();
 
 	const changeSite = (address) => {
-		navigate(`/achievements/${address}`);
+		navigate(`/pomoglismy/${address}`);
 	};
 
 	return (
