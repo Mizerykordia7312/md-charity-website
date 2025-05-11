@@ -7,9 +7,9 @@ const HeroSesction = () => {
 			<div className={classes.heroContent}>
 				<h1>Potrzebujesz pomocy?</h1>
 				<p>Zobacz co możemy dla Ciebie zrobić</p>
-				<Link to='wesprzyj-nas' className={classes.button}>
+				<a href='#get-help' className={classes.button}>
 					Zobacz więcej
-				</Link>
+				</a>
 			</div>
 		</section>
 	);

@@ -1,5 +1,5 @@
 .heroSection {
-	background-image: url('../../assets/img/dla-potrzebujących/tło.jpg');
+	background-image: url('../../../assets/img/dla-potrzebujących/tło.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -60,7 +60,7 @@
 
 @media (max-width: 1024px) {
 	.heroSection {
-		background-image: url('../../assets/img/dla-potrzebujących/tło2.jpg');
+		background-image: url('../../../assets/img/dla-potrzebujących/tło2.jpg');
 		.heroContent {
 			margin-bottom: 550px;
 			h1 {
