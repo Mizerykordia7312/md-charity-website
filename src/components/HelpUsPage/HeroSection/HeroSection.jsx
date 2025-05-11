@@ -11,7 +11,7 @@ const HeroSection = () => {
 					które na co dzień mierzy się z ciszą. Twoje wsparcie naprawdę ma
 					znaczenie.
 				</p>
-				<Link to='#wesprzyj' class={classes.donateBtn}>
+				<Link to='#wesprzyj-nas' class={classes.donateBtn}>
 					Wesprzyj nas teraz
 				</Link>
 			</div>

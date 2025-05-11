@@ -8,24 +8,24 @@ const WaysToHelpSection = () => {
 	return (
 		<section className={classes.section}>
 			<h3 className='section-title'>Sposoby pomocy:</h3>
-			<div className='wrapper'>
-				<div className={classes.row}>
-					<HelpedCard
-						img={donationBox}
-						href='https://www.siepomaga.pl/maskotkidzieciom'
-						description='Wpłać na siepomaga'
-						imageDescription='Pudełko'
-						hasButton={true}
-					/>
-					<HelpedCard
-						img={donatePhoto}
-						href='https://www.przelewy24.pl/'
-						description='Przelew online'
-						imageDescription='Pudełko'
-						hasButton={true}
-					/>
-				</div>
+
+			<div className={classes.row}>
+				<HelpedCard
+					img={donationBox}
+					href='https://www.siepomaga.pl/maskotkidzieciom'
+					description='Wpłać na siepomaga'
+					imageDescription='Pudełko'
+					hasButton={true}
+				/>
+				<HelpedCard
+					img={donatePhoto}
+					href='https://www.przelewy24.pl/'
+					description='Przelew online'
+					imageDescription='Pudełko'
+					hasButton={true}
+				/>
 			</div>
+
 			<div className={`${classes.row} ${classes.secondRow}`}>
 				<WayToHelpCard
 					title='Wysyłka maskotek'

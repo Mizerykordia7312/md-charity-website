@@ -1,5 +1,7 @@
+import HeroSesction from '../components/GetHelpPage/HeroSection';
+
 const GetHelpPage = () => {
-	return <h1>Dla potrzebujacych</h1>;
+	return <HeroSesction />;
 };
 
 export default GetHelpPage;
