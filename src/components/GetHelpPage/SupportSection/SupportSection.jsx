@@ -1,3 +1,4 @@
+import GetHelpForm from '../GetHelpForm/GetHelpForm';
 import classes from './SupportSection.module.scss';
 
 const SupportSection = () => {
@@ -31,16 +32,7 @@ const SupportSection = () => {
 					</h4>
 				</div>
 				<div className={classes.formContainer}>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
-					odio! Magni molestias ea aut placeat ad quos quasi exercitationem at
-					iusto numquam amet quaerat reprehenderit possimus aliquam cum pariatur
-					nam officiis, consequuntur vero itaque ipsa ab nobis? Ut quo aperiam
-					voluptate dolorem sed nobis sit vel nostrum, perspiciatis temporibus
-					possimus illo facere harum cumque, velit, molestiae soluta! Laboriosam
-					minima recusandae tenetur velit non quam delectus, est accusamus in
-					optio quos quia saepe a et sit eum enim aut. Maiores accusamus, et id
-					minus ea exercitationem ullam corrupti a fugit soluta tempora
-					quibusdam voluptates laudantium hic? Ipsa ipsam tempore dicta qui.
+					<GetHelpForm />
 				</div>
 			</div>
 		</section>

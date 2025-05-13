@@ -55,5 +55,25 @@
 
 	.formContainer {
 		background-color: $main-light-blue;
+		padding: 2rem 2.5rem;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		overflow: scroll;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		height: auto;
+		width: auto;
+		align-items: center;
+		justify-content: center;
+
+		.infoBox,
+		.formContainer {
+			width: 100%;
+		}
 	}
 }

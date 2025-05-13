@@ -1,0 +1,15 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		margin: 0.5rem auto;
+
+		.answer {
+			margin-left: 0.5rem;
+		}
+	}
+}
