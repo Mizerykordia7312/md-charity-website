@@ -35,23 +35,23 @@ const GetHelpPage = () => {
 				</div>
 			</label>
 
+			<label htmlFor='name'>Imię:</label>
+			<input type='text' id='name' name='name' required />
+
+			<label htmlFor='lastName'>Nazwisko:</label>
+			<input type='text' id='lastName' name='lastName' required />
+
+			<label htmlFor='adress'>Adres:</label>
+			<input type='text' id='adress' name='adress' required />
+
+			<label htmlFor='phoneNumber'>Numer telefonu:</label>
+			<input type='number' id='phoneNumber' name='phoneNumber' required />
+
+			<label htmlFor='email'>Email:</label>
+			<input type='text' id='email' name='email' required />
+
 			{userType === 'private' && (
 				<>
-					<label htmlFor='name'>Imię:</label>
-					<input type='text' id='name' name='name' required />
-
-					<label htmlFor='lastName'>Nazwisko:</label>
-					<input type='text' id='lastName' name='lastName' required />
-
-					<label htmlFor='adress'>Adres:</label>
-					<input type='text' id='adress' name='adress' required />
-
-					<label htmlFor='phoneNumber'>Numer telefonu:</label>
-					<input type='number' id='phoneNumber' name='phoneNumber' required />
-
-					<label htmlFor='email'>Email:</label>
-					<input type='text' id='email' name='email' required />
-
 					<label htmlFor='secondName'>
 						Podaj imię i nazwisko osoby, której ma dotyczyć pomoc:
 					</label>
@@ -62,19 +62,29 @@ const GetHelpPage = () => {
 					</label>
 					<input type='number' id='age' name='age' required />
 
-					<label htmlFor='message'>
+					<label htmlFor='descriptionMessage'>
 						Jakiego rodzaju trudności zdrowotne lub rozwojowe dotyczą osoby
 						potrzebującej wsparcia?
 					</label>
 
-					<textarea id='message' name='message' rows='5' required></textarea>
+					<textarea
+						id='descriptionMessage'
+						name='descriptionMessage'
+						rows='5'
+						required
+					></textarea>
 
-					<label htmlFor='message'>
+					<label htmlFor='helpMessage'>
 						Jakiego rodzaju wsparcia potrzebujesz i ile orientacyjnie może
 						kosztować?
 					</label>
 
-					<textarea id='message' name='message' rows='5' required></textarea>
+					<textarea
+						id='helpMessage'
+						name='helpMessage'
+						rows='5'
+						required
+					></textarea>
 				</>
 			)}
 			{userType === 'school' && <h1>Szkoła</h1>}

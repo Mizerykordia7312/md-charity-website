@@ -1,5 +1,4 @@
 import MainPage from './pages/MainPage.jsx';
-import AutismInfoPage from './pages/AutismInfoPage.jsx';
 import AchievementsPage from './pages/AchievementsPages/AchievementsPage.jsx';
 import GetHelpPage from './pages/GetHelpPage.jsx';
 import HelpUsPage from './pages/HelpUsPage.jsx';
@@ -18,10 +17,7 @@ const router = createBrowserRouter([
 				index: true,
 				element: <MainPage />,
 			},
-			{
-				path: 'autyzm-info',
-				element: <AutismInfoPage />,
-			},
+
 			{
 				path: 'pomoglismy',
 				element: <AchievementsPage />,
