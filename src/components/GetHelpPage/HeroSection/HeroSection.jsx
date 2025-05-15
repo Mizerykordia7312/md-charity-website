@@ -1,5 +1,4 @@
 import classes from './HeroSection.module.scss';
-import { Link } from 'react-router-dom';
 
 const HeroSesction = () => {
 	return (
