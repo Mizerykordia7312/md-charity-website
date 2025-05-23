@@ -1,0 +1,8 @@
+@import '../../../style/colors.scss';
+
+.errorMessage {
+		color: $main-red;
+		font-weight: bold;
+		font-size: 0.9rem;
+		margin-top: 4px;
+	}
