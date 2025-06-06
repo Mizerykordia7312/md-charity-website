@@ -1,8 +1,73 @@
 @import '../../../style/colors.scss';
 
-.errorMessage {
-		color: $main-red;
-		font-weight: bold;
-		font-size: 0.9rem;
-		margin-top: 4px;
+label {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+	color: #0f172a;
+
+	input,
+	textarea {
+		font-size: 1rem;
+		width: 100%;
+		padding: 0.6rem 1rem;
+		border-radius: 8px;
+		margin-top: 0.2rem;
+		border: 1px solid #94a3b8;
+		background-color: #fff;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+		color: #0f172a;
+		resize: none;
+
+		&:focus {
+			outline: none;
+			border: 2px solid $input-blue;
+		}
 	}
+}
+
+@media (max-width: 1024px) {
+	label {
+		width: 100%;
+	}
+
+	input,
+	textarea {
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 768px) {
+	label {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	input,
+	textarea {
+		font-size: 0.9rem;
+		padding: 0.5rem 0.8rem;
+	}
+}
+
+@media (max-width: 480px) {
+	label {
+		width: 100%;
+		font-size: 0.9rem;
+	}
+
+	input,
+	textarea {
+		font-size: 0.85rem;
+		padding: 0.4rem 0.7rem;
+		border-radius: 6px;
+	}
+}
+
+.errorMessage {
+	color: $main-red;
+	font-weight: bold;
+	font-size: 0.7rem;
+	margin-top: 4px;
+}
