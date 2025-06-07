@@ -5,6 +5,7 @@ import HelpUsPage from './pages/HelpUsPage.jsx';
 import HelpedPage from './pages/AchievementsPages/HelpedPage.jsx';
 import BeneficiariesPage from './pages/AchievementsPages/BeneficiariesPage.jsx';
 import ChildPage from './pages/AchievementsPages/ChildPage.jsx';
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import Root from './pages/Root.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Root />,
+		errorElement: <ErrorPage />,
 		children: [
 			{
 				index: true,

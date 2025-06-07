@@ -81,7 +81,7 @@
 		transition: 0.3s background-color;
 
 		&:hover {
-			background-color: lighten($input-blue, 5%);
+			background-color: $input-blue;
 		}
 	}
 }
