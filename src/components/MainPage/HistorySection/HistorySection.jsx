@@ -23,13 +23,13 @@ const HistorySection = () => {
 				<VerticalTimeline>
 					{years.slice(0, visableElements).map((years, index) => (
 						<VerticalTimelineElement
-							className=' vertical-timeline-element--work '
-							contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
+							className={`vertical-timeline-element--work ${classes.custom}`}
+							contentStyle={{ background: '#b3d9f2', color: '#000' }}
 							contentArrowStyle={{
-								borderRight: '7px solid  rgb(33, 150, 243)',
+								borderRight: '7px solid  #b3d9f2',
 							}}
 							date={years.date}
-							iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+							iconStyle={{ background: '#a8cfe6', color: '#2f4f6f' }}
 							icon={<FaHeart />}
 							key={index}
 						>
@@ -63,8 +63,8 @@ const HistorySection = () => {
 					{visableElements < years.length && (
 						<VerticalTimelineElement
 							iconStyle={{
-								background: 'rgb(33, 150, 243)',
-								color: '#fff',
+								background: '#a8cfe6',
+								color: '#2f4f6f',
 								cursor: 'pointer',
 							}}
 							icon={<AiOutlinePlus />}

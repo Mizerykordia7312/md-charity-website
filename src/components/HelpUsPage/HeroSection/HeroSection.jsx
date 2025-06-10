@@ -11,7 +11,11 @@ const HeroSection = () => {
 					które na co dzień mierzy się z ciszą. Twoje wsparcie naprawdę ma
 					znaczenie.
 				</p>
-				<Link to='#wesprzyj-nas' class={classes.donateBtn}>
+				<Link
+					to='https://www.przelewy24.pl/'
+					target='_blank'
+					class={classes.donateBtn}
+				>
 					Wesprzyj nas teraz
 				</Link>
 			</div>

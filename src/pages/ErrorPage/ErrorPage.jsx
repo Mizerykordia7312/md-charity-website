@@ -7,7 +7,7 @@ const ErrorPage = () => {
 		<div className={classes.wrapper}>
 			<img
 				src={maskotka}
-				alt='Zagubiona maskotka'
+				alt='Na łóżku siedzi odwrócony plecami pluszowy miś'
 				className={classes.image}
 			/>
 			<div className={classes.separator}></div>
