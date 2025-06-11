@@ -6,7 +6,13 @@ const HeroSesction = () => {
 			<div className={classes.heroContent}>
 				<h1>Potrzebujesz pomocy?</h1>
 				<p>Zobacz co możemy dla Ciebie zrobić</p>
-				<a href='#get-help' className={classes.button}>
+				<a
+					className={classes.button}
+					onClick={() => {
+						const el = document.getElementById('get-help');
+						el.scrollIntoView({ behavior: 'smooth' });
+					}}
+				>
 					Zobacz więcej
 				</a>
 			</div>
