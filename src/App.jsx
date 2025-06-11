@@ -7,9 +7,9 @@ import BeneficiariesPage from './pages/AchievementsPages/BeneficiariesPage.jsx';
 import ChildPage from './pages/AchievementsPages/ChildPage.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import Root from './pages/Root.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <Root />,
