@@ -8,7 +8,8 @@ const HeroSesction = () => {
 				<p>Zobacz co możemy dla Ciebie zrobić</p>
 				<a
 					className={classes.button}
-					onClick={() => {
+					onClick={(e) => {
+						e.preventDefault();
 						const el = document.getElementById('get-help');
 						el.scrollIntoView({ behavior: 'smooth' });
 					}}
